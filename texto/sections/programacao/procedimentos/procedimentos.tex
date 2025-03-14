@@ -1,6 +1,56 @@
 \section{Procedimentos}
 	Esta seção tem como objetivo relatar os procedimentos gerais da programação, por exemplo como ligar o robô, quais as funcionalidades que temos e como podemos modifica-las entre outros procedimentos. Lembrando sempre que tudo que relatarmos aqui não significam que sejam os modos mais eficientes ou da melhor forma, sempre questionem os métodos e pensem melhores maneiras para resolver os problemas, e quando encontrarem novas formas melhores, pois vão encontrar, alterem esse documentos.
 	
+	\subsection{Como configurar um pendrive com Ubuntu}
+		O processo consiste em configurar seu pendrive possibilitando que ele seja utilizando para a instalação do sistema operacional, seja ele qual for, em outros computadores.
+		
+		Atualmente é utilizado o Ubuntu 22.04 e o processo de configuração do pendrive pode ser feito tanto com o Linux quanto com o Windows de diversas maneiras, essa seção irá demonstrar duas possíveis, uma em cada arquitetura.
+		
+		\subsubsection{Configurando o pendrive no Windows}
+		
+		\subsubsection{Configurando o pendrive no Linux}
+			Para a configuração do pendrive usando Linux precisaremos do software para fazer essa configuração e o arquivo ISO do sistema que estaremos utilizando.
+			
+%			O software que utilzamos é o balenaEtcher e ele pode ser baixado \href{https://etcher.balena.io/}{clicando aqui} ou caso o link esteja dejativado é possível encontrar facilmente no google.
+			
+			Podemos realizar a instalação do balenaEtcher usando os comandos:
+			
+			 \noindent \$ curl -L -o ~/Downloads/balena-etcher-latest-amd64.deb https://github.com/balena-io/etcher/releases/download/latest/\*amd64.deb
+			 
+			 \noindent \$ sudo apt install ~/Downloads/balena-etcher-latest-amd64.deb
+			 
+			
+			\begin{equation}
+				curl -L -o ~/Downloads/balena-etcher-latest-amd64.deb https://github.com/balena-io/etcher/releases/download/latest/\*amd64.deb
+			\end{equation}
+			
+			\begin{lstlisting}[language=bash, xleftmargin=-200pt]
+				$ curl -L -o ~/Downloads/balena-etcher-latest-amd64.deb https://github.com/balena-io/etcher/releases/download/latest/\textbackslash{}*amd64.deb
+			\end{lstlisting}
+		
+			Na sequência é necessário baixar também o arquivo ISO, que pode ser encontrado \href{https://releases.ubuntu.com/jammy/}{clicando aqui}, o Ubuntu que deve ser instalado é o 22.04 64-bit (AMD64) desktop image.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.2]{sections/programacao/procedimentos/imagens/site_linux_22.png}
+			\end{figure}
+		
+			Com o software baixado e com a ISO do Ubuntu podemos então preparar nosso pendrive, é recomendado que ele tenha mais de 8gb.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.2]{sections/programacao/procedimentos/imagens/site_linux_22.png}
+			\end{figure}
+		
+		\todo{Continua}
+			
+			
+			
+		
+	
+	\subsection{Formatar e configurar o NUC}
+		
+	
 	\subsection{Ligar os motores}
 		Primeiramente devemos verificar se os motores estão com energia, para isso basta apenas conectar a bateria e colocar o botão de emergência na posição ON. Caso o motor esteja alimentado de forma correta, os LED's deles deverão acender e em seguida desligar. Caso isso não ocorra solicitar ajuda para a equipe de Elétrica.
 		
